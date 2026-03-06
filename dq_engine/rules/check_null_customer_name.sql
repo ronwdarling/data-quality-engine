@@ -5,5 +5,4 @@ SELECT
     COUNT(*) AS null_customer_name_count,
     COUNT(*)*100/(SELECT COUNT(*) FROM customers) AS null_customer_name_percentage
 FROM customers
-WHERE customer_name IS NULL
-AND is_active = 1:
+WHERE customer_name IS NULL;
